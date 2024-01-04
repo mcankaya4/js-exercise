@@ -1,0 +1,134 @@
+@import url('./css/_reset.css');
+@import url('./css/_normalize.css');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+body {
+  color: white;
+  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+.black {
+  background-color: #222222;
+}
+
+.green {
+  background-color: rgb(99, 191, 99);
+}
+
+button {
+  background-color: #f9f7f7;
+  border: 1px solid #222222;
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.one {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+  & > h3 {
+    font-size: 14px;
+  }
+}
+
+.two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.three {
+  margin-top: 10px;
+  .box {
+    box-sizing: border-box;
+    background-color: #f9f7f7;
+    height: 70px;
+    width: 100px;
+    color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 60px;
+    font-size: 50px;
+    position: relative;
+    left: calc(50% - 50px);
+    text-align: center;
+    z-index: 1;
+  }
+
+  .line {
+    height: 6px;
+    width: 100%;
+    background-color: #f9f7f7;
+    position: relative;
+    top: -33px;
+  }
+}
+
+.four {
+  display: flex;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-left: 80px;
+    margin-top: 20px;
+
+    & > input {
+      border: 2px solid #f9f7f7;
+      outline: none;
+      width: 160px;
+      height: 60px;
+      font-size: 36px;
+      color: #f9f7f7;
+      text-align: center;
+      background-color: transparent;
+
+      &::placeholder {
+        color: #f9f7f7;
+      }
+    }
+  }
+
+  & > .right {
+    display: flex;
+    margin-top: 24px;
+    margin-left: 150px;
+    flex-direction: column;
+  }
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-10 {
+  margin-top: 18px;
+}
+
+.orange {
+  color: darkkhaki;
+}
+
+.blue {
+  color: lightseagreen;
+}
+
+.red {
+  color: red;
+}
+
+h2 {
+  font-size: 18px;
+}
