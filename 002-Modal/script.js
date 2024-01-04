@@ -29,7 +29,7 @@ const closeEvent = function () {
 closeBtn.addEventListener('click', closeEvent);
 overlayDiv.addEventListener('click', closeEvent);
 const keyHandler = function (event) {
-  if (event.key == 'Escape') {
+  if (event.key == 'Escape' && !modalDiv.classList.contains('hidden')) {
     closeEvent();
   }
 };
