@@ -12,11 +12,10 @@ const pSection = document.querySelectorAll('.player');
 
 let p1skore = 0;
 let p2skore = 0;
-p1skoreP.textContent = p1skore;
-p2skoreP.textContent = p2skore;
-
 let activeSkore = 0;
 let active = true;
+p1skoreP.textContent = p1skore;
+p2skoreP.textContent = p2skore;
 
 const player1Active = function () {
   active = !active;
